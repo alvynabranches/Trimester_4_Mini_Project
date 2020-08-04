@@ -69,27 +69,27 @@
 00061. Moh Moh ke dhaage
 00062. Mushurane ki wajah tum ho
 00063. O mere dil ke chain
-00064. Pehla Nasha
-00065. Phir Mohabbat karne chala hai tu
-00066. Premi Ashiq Aawara Paaga Manju Deewana
-00067. Rimjhim Gire Sawan
-00068. Sandesh Aate Hai
-00069. 
-00070. 
-00071. 
-00072. 
-00073. 
-00074. 
-00075. 
-00076. 
-00077. 
-00078. 
-00079. 
-00080. 
-00081. 
-00082. 
-00083. 
-00084. 
+00064. Pehla nasha
+00065. Phir mohabbat karne chala hai tu
+00066. Premi ashiq aawara paaga manju deewana
+00067. Rimjhim gire Sawan
+00068. Sandesh aate Hai
+00069. Soochenge Tumhe Pyar
+00070. Sun raha hai na tu
+00071. Tera ban jaunga
+00072. Tera yaar hoon main
+00073. Tera jaisa yaar kahan
+00074. Tere naam humne kiya hai
+00075. Teri Deewani
+00076. Teri mitti mein mill jawaan
+00077. Tinak tin tana
+00078. Tu jaane na
+00079. Tu meri Zindagi hai
+00080. Tujhe deka to yeh jana sanam
+00081. Tujhe kitna chane lage
+00082. Tum hi aana
+00083. Tumse milke aisa laga tumse milke
+00084. Vaaste
 00085. 
 00086. 
 00087. 
