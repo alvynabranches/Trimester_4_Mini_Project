@@ -107,6 +107,48 @@
 00099. 
 00100. 
 
+## English Karaoke Songs Dataset
+00001. (DUBSTEP) The Rogues - Gravel walk
+00002. 192000  - Gorillaz
+00003. A-Ha - Take On Me (Instrumental Version)
+00004. AURORA - The River (Remix Instrumental)
+00005. Bag Raiders - Shooting Stars 
+00006. Bebe Rexha - Last Hurrah 
+00007. BomFunk MCs - Freestyler INSTRUMENTAL (rare version)
+00008. Brennan Savage - Look At Me Now (Instrumental by cruor)
+00009. Bruce Springteen Born In The USA Instrumental
+00010. Call Me Maybe 
+00011. Carly Rae Jepsen - Too Much 
+00012. Deadmau5 - Ghosts n Stuff 
+00013. Dropkick Murphys - Im Shipping Up to Boston
+00014. Enya - Only Time 
+00015. First - Cold War Kids (Piano Cover)
+00016. Gangstas Paradise by Coolio
+00017. Gorillaz - On Melancholy Hill 
+00018. Green Day - Basket Case
+00019. Green Day - Welcome to Paradise 
+00020. Gryffin & Illenium ft. Daya - Feel Good 
+00021. Hardwell & Jake Resee - Mad World
+00022. Icona Pop - All Night 
+00023. Kid Cudi - Day n Nite
+00024. Kid cudi Pursuit-of-Happiness
+00025. Linkin Park - Numb 
+00026. Linkin Park - Somewhere I Belong 
+00027. Lorde - Green Light 
+00028. Lorde - Hard FeelingsLoveless 
+00029. Maroon 5 Ft. Wiz Khalifa - Payphone
+00030. Mika-Relax 
+00031. Nelly Furtado - Say It Right 
+00032. Snow Patrol-Open Your Eyes
+00033. Tame Impala - The Less I Know The Better 
+00034. The Fray - How To Save A Life 
+00035. The Killers - All These Things That Ive Done 
+00036. The Midnight - Gloria 
+00037. The Police - Every Breath You Take 
+00038. The xx - Intro	
+00039. Time To Pretend 
+00040. White Walls
+
 ## Konkani Karaoke Songs Dataset
 00001. 
 00002. 
