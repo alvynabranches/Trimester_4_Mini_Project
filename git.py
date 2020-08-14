@@ -7,4 +7,4 @@ b = 'master'
 subprocess.call(['git', 'pull', r, b])
 subprocess.call(['git', 'add', '.'])
 subprocess.call(['git', 'commit', '-m', m])
-subprocess.call(['git', 'push', repo, branch])
+subprocess.call(['git', 'push', r, b])
