@@ -1,3 +1,8 @@
 **/data/audio_dataset/konkani_music/
-**/**/.ipynb_checkpoints
-**/**/konkani
+**/**/.ipynb_checkpoints/
+**/**/konkani/
+**/**/__pycache__/
+**/**/debug.log
+**/**/models/gans/
+**/**/gans/
+**/**/datasets/

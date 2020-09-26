@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    background-image: url("{%static'img/bg.png'%}");
+    color: white;
+}
+.main-menu {
+    margin: auto;
+    margin-left: 35%;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+ul li {
+    float: left;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+}
+ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+select {
+    background-color: silver;
+    border-radius: 5px;
+    width: 88%;
+}
+.form-element {
+    border-radius: 5px;
+    width: 88%;
+}
+.container {
+    float: center;
+}
+input[type=text] {
+    width: 88%;
+    background-color: silver;
+    border-radius: 5px;
+}
+.label {
+    color: aqua;
+    width: 25%;
+}
+input[type=submit] {
+    padding: 5px;
+    margin: 10px;
+    float: center;
+    /* border-radius: 5px; */
+    background-color: green;;
+    border-color: green;
+    color: white;
+}
+input[type=reset] {
+    padding: 5px;
+    margin: 10px;
+    float: center;
+    /* border-radius: 5px; */
+    background-color: red;
+    border-color: red;
+    color: white;
+}
