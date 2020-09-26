@@ -8,7 +8,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}\\website\\back_end\\mugen\\manage.py",
+            "program": "${workspaceFolder}\\website\\mugen\\manage.py",
             "args": [
                 "runserver",
                 // "--noreload"
