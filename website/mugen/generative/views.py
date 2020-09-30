@@ -28,8 +28,12 @@ def generate_music(request):
             GenerateAudioModel(region=region, temp=temp, ip_address=ip, time=time_now).save()
             BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             if os.path.isfile(os.path.join(BASE_DIR, 'music.mid')):
-                pass
-            
+                BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                filename = os.path.join(BASE_DIR, 'music.mid')
+                with open(filename, 'rb') as fh:
+                    response = HttpResponse(fh.read(), content_type='audio/midi')
+                    response['Content-Disposition'] = 'inline; filename=' + os.path.basename(filename)
+                return render(request, 'generative/index.html', dict(form=form), content_type='audio/midi')
         # return HttpResponse(f'{region=}\n{temp=}\n{ip=}\n{time_now=}')
             
     return render(request, 'generative/index.html', dict(form=form, region=region, temp=temp, ip=ip, time=time_now))
@@ -37,4 +41,4 @@ def generate_music(request):
 def output(request):
     if request.method == 'POST':
         region, temp, ip, time_now = '', '', '', ''
-    return HttpResponse(f'{region=}\n{temp=}\n{ip=}\n{time_now=}')
+        return HttpResponse(f'{region=}\n{temp=}\n{ip=}\n{time_now=}')

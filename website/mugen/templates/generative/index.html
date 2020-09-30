@@ -46,19 +46,12 @@
                     </div>
                 </form> -->
                 <form action="" method="POST">
-                    {{ form.as_p }}
                     {% csrf_token %}
+                    {{ form.as_p }}
                     <input type="submit" class="btn btn-primary" value="Submit">
                     <input type="reset" class="btn btn-primary" value="Clear">
                 </form>
             </div>
-            <!-- <div class="download-button" id="download-button"><button disabled="disabled" class="btn btn-primary" style="float: center; color: rgb(53, 162, 189);">Download</button></div> -->
-            <!-- <div style="color: white;">
-                <p style="color: white;">{{ region }}</p>
-                <p style="color: white;">{{ temp }}</p>
-                <p style="color: white;">{{ ip }}</p>
-                <p style="color: white;">{{ time }}</p>
-            </div> -->
         </div>
     </main>
     <footer>

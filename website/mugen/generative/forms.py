@@ -11,19 +11,21 @@ choices = (
     ('netherlands', 'Netherlands'), 
     ('poland', 'Poland'), 
     ('switzerland', 'Switzerland'), 
-    ('germany_ballad', 'Germany (Ballad)'), 
-    ('germany_boehme', 'Germany (Boehme)'), 
-    ('germany_dva', 'Germany (Dva)'), 
-    ('germany_erk', 'Germany (Erk)'), 
-    ('germany_fink', 'Germany (Fink)'), 
-    ('germany_kinder', 'Germany (Kinder)'), 
-    ('germany_zuccal', 'Germany (Zuccal)'), 
-    ('china_han', 'China (Han)'), 
-    ('china_natmin', 'China (Natmin)'), 
-    ('china_shanxi', 'China (Shanxi)'), 
-    ('china_xinhua', 'China (Xinhua)'), 
+    ('natmin', 'Natmin'), 
+    # ('germany_ballad', 'Germany (Ballad)'), 
+    # ('germany_boehme', 'Germany (Boehme)'), 
+    # ('germany_dva', 'Germany (Dva)'), 
+    # ('germany_erk', 'Germany (Erk)'), 
+    # ('germany_fink', 'Germany (Fink)'), 
+    # ('germany_kinder', 'Germany (Kinder)'), 
+    # ('germany_zuccal', 'Germany (Zuccal)'), 
+    # ('china_han', 'China (Han)'), 
+    # ('china_natmin', 'China (Natmin)'), 
+    # ('china_shanxi', 'China (Shanxi)'), 
+    # ('china_xinhua', 'China (Xinhua)'), 
 )
 
 class GenerateAudioForm(forms.Form):
-    region = forms.ChoiceField(choices=choices)
-    temp = forms.CharField()
+    region = forms.ChoiceField(choices=choices, required=True)
+    # temp = forms.FloatField(min_value=0.001, max_value=1)
+    temp = forms.CharField(required=True)

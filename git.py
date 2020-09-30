@@ -1,10 +1,8 @@
-import subprocess
-m = input('Enter the commit message: ')
+import subprocess, socket
+if socket.gethostbyname(socket.gethostname()) != '127.0.0.1':
+    m, r, b = input('Enter the commit message: '), 'origin', 'master'
 
-r = 'origin'
-b = 'master'
-
-subprocess.call(['git', 'pull', r, b])
-subprocess.call(['git', 'add', '.'])
-subprocess.call(['git', 'commit', '-m', m])
-subprocess.call(['git', 'push', r, b])
+    subprocess.call(['git', 'pull', r, b])
+    subprocess.call(['git', 'add', '.'])
+    subprocess.call(['git', 'commit', '-m', m])
+    subprocess.call(['git', 'push', r, b])
