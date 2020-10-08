@@ -12,7 +12,7 @@
             "args": [
                 "runserver",
                 // "--noreload"
-            ],
+            ], 
             "django": true
         }
     ]
