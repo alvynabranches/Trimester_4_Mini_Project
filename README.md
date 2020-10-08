@@ -1,9 +1,30 @@
 # Trimester 4 Mini Project - Deep Learning and/or Big Data
 
+## Music Generation Using Deep Learning
+
+
 ## Project By 
 1. Alvyn Abranches
 2. Omkar Kadam
 3. Dharamveer Rana
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- ## Hindi Karaoke Songs Dataset
 00001. Baatein ye kabhi na
