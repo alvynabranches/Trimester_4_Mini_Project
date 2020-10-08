@@ -1,6 +1,5 @@
 from django import forms
 
-
 choices = (
     ('',''),
     ('austria', 'Austria'), 
@@ -27,5 +26,4 @@ choices = (
 
 class GenerateAudioForm(forms.Form):
     region = forms.ChoiceField(choices=choices, required=True)
-    # temp = forms.FloatField(min_value=0.001, max_value=1)
     temp = forms.CharField(required=True)
