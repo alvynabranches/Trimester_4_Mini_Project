@@ -12,6 +12,7 @@ region, temp, ip, time_now = '', '', '', ''
 def generate_music(request):
     form = GenerateAudioForm()
     global region, temp, ip, time_now
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     if request.method == 'POST':
         form = GenerateAudioForm(request.POST)
         
@@ -23,12 +24,18 @@ def generate_music(request):
             temp = float(temp)
             ip = socket.gethostbyname(socket.gethostname())
             time_now = datetime.datetime.now()
-            
-            main(region, temp)
+            song_dir = os.path.join(BASE_DIR, 'download')
+            if not os.path.isdir(song_dir):
+                os.mkdir(song_dir)
+            file_name = os.path.join(song_dir, 'download.mid')
+            for i in range(1, 500):
+                if os.path.isfile(file_name):
+                    file_name = os.path.join(song_dir, f'download ({i}).mid')
+                else:
+                    break
+            main(region, temp, file_name)
             GenerateAudioModel(region=region, temp=temp, ip_address=ip, time=time_now).save()
-            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             if os.path.isfile(os.path.join(BASE_DIR, 'music.mid')):
-                BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
                 filename = os.path.join(BASE_DIR, 'music.mid')
                 with open(filename, 'rb') as fh:
                     response = HttpResponse(fh.read(), content_type='audio/midi')

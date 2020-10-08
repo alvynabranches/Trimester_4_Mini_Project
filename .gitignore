@@ -8,3 +8,5 @@
 **/**/datasets/europa/
 **/**/audios/
 **/**/download/
+website/mugen/delete.py
+random_generator.py

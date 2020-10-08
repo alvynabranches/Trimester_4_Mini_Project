@@ -288,13 +288,13 @@ class MelodyGenerator:
         # write the m21 stream to a midi file
         stream.write(format, file_name)
 
-def main(genre, temp):
+def main(genre, temp, file_name):
     printinfo(Genre = genre, temp = temp)
     mg = MelodyGenerator(model,MAPPING_PATH)
     seed = seed_input
     melody = mg.generate_melody(seed, 500, SEQUENCE_LENGTH, temp)
     print('melody generated!!!!!!!!!!!!!!!!!!!!!!!!!')
-    mg.save_melody(melody, file_name='music.mid')
+    mg.save_melody(melody, file_name=file_name)
 
 # if __name__ == '__main__':
 #     genre = input('Enter Genre choice:\t')

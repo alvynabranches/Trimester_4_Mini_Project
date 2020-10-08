@@ -13,7 +13,6 @@ def printinfo(Genre,temp):
     global model 
     global MAPPING_PATH
     
-    
     if (Genre == 1):
         model,MAPPING_PATH = "models/Austria_model.h5" , "mappers/Austria_mapping.json"
         files = os.listdir("Austria_dataset/")
@@ -27,15 +26,13 @@ def printinfo(Genre,temp):
         files = ["czech_dataset/" + file for file in files]
         print(files[0])
         seed_input  = open(files[np.random.randint(low = 0, high= len(files))]).read()
-    return model,temp,MAPPING_PATH,seed_input
-
+    return model,temp,MAPPING_PATH, seed_input
 
 class MelodyGenerator:
     """A class that wraps the LSTM model and offers utilities to generate melodies."""
-
     def __init__(self, model_path,mapping_path,sequence_length=64):
         """Constructor that initialises TensorFlow model"""
-
+        
         self.model_path = model_path
         self.model = keras.models.load_model(model_path)
         self.mapping_path = mapping_path
@@ -43,9 +40,8 @@ class MelodyGenerator:
 
         with open(mapping_path, "r") as fp:
             self._mappings = json.load(fp)
-
+            
         self._start_symbols = ["/"] * sequence_length
-
 
     def generate_melody(self, seed, num_steps, max_sequence_length, temperature):
         """Generates a melody using the DL model and returns a midi file.
@@ -95,7 +91,6 @@ class MelodyGenerator:
 
         return melody
 
-
     def _sample_with_temperature(self, probabilites, temperature):
         """Samples an index from a probability array reapplying softmax using temperature
         :param predictions (nd.array): Array containing probabilities for each of the possible outputs.
@@ -110,9 +105,6 @@ class MelodyGenerator:
         index = np.random.choice(choices, p=probabilites)
 
         return index
-    
-    
-    
     
     def save_melody(self, melody, step_duration=0.25, format="midi", file_name="new.mid"):
         """Converts a melody into a MIDI file
@@ -160,8 +152,6 @@ class MelodyGenerator:
 
         # write the m21 stream to a midi file
         stream.write(format, file_name)
-
-    
     
 if __name__ == "__main__":
     genre = int(input("Enter Genre choice"))
