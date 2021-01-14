@@ -1,6 +1,6 @@
 # Trimester 4 Mini Project - Deep Learning and/or Big Data
 
-## Music Generation Using Deep Learning
+## Music Generation Using Deep Learning (LSTMs, AEs, GANs)
 
 
 ## Project By 
